@@ -46,7 +46,7 @@ async function main() {
 
       
       // Skip issues with no assigned Milestone
-      if (issue.milestone) == null {
+      if (issue.milestone == null) {
         continue
       }
 
