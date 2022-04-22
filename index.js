@@ -44,6 +44,11 @@ async function main() {
         core.setFailed(`Error retrieving issue from card ${error}`);
       }
 
+      
+      // Skip issues with no assigned Milestone
+      if (issue.milestone) == null {
+        continue
+      }
 
       if (issue.milestone.title === GITHUB_RELEASE_NAME) {
         core.info(`Issue ${issue.number} has been released`);
