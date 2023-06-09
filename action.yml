@@ -1,15 +1,15 @@
-name: 'GitHub Project Archiver'
-description: 'Archives cards belonging to a released milestone'
+name: "GitHub Project Archiver"
+description: "Archives cards belonging to a released milestone"
 inputs:
   github_token:
-    description: 'GitHub Token, must have org level permissions if project exists at that level.'
+    description: "GitHub Token, must have org level permissions if project exists at that level."
     required: true
   github_done_column_id:
-    description: 'Id of the done column to inspect for released items..'
+    description: "Id of the done column to inspect for released items.."
     required: true
   github_release_name:
-    description: 'Name of release to match milestone on'
+    description: "Name of release to match milestone on"
     required: true
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"

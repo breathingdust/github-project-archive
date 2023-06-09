@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - 'releases/*'
+      - "releases/*"
 jobs:
   basic-validation-call:
     uses: actions/reusable-workflows/.github/workflows/basic-validation.yml@main
